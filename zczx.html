@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>政策咨询</title>
+	<!--网站对移动设备友好，确保适当的绘制和触屏缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript" src="js//jquery-2.1.1.min.js"></script>
+    <!--bootstrap脚本引入-->
+    <script type="text/javascript" src="bootstrap-3.3.1//js//bootstrap.min.js"></script>
+    <!--bootstrap样式引入-->
+    <link href="bootstrap-3.3.1//css//bootstrap.min.css" rel="stylesheet" />
+    <!--引入政策咨询样式-->
+	<link href="css//common.css" rel="stylesheet" />
+	<!--引入政策咨询脚本-->
+    <script type="text/javascript" src="js/zczx.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <!--导航栏,固定在顶部部分-->
+    <div class="nav-bar navbar-fixed-top">
+        <div class="container">
+            <nav>
+                <a>首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="bszn.html" target="_blank">办事指南</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="zczx.html" target="_blank">政策咨询</a>&nbsp&nbsp;|&nbsp;&nbsp;
+                <a href="xxgk.html" target="_blank">信息公开</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="tssl.html" target="_blank">投诉处理</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="yqfy.html" target="_blank">舆情反映</a>
+                <a class="pull-right"><img src="img//servicephone.png"/>&nbsp;服务电话：0731-12345678</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!--背景-->
+    <div class="bigimg" style="background-image:url('img//bag.jpg');">
+       <img class="logo1" src="img//logo.png"/>
+       <div id="_2dcode"><img src="img//erweima.png" alt="二维码" data-toggle="tooltip" data-placement="left" title="<h5>扫一扫，在手机上查看吧！</h5>"/></div>
+       <img class="logo2" src="img//zhengcezhixun.png"/>
+    </div>
+    
+    <!--你的当前位置-->
+    <div id="cur_location" class="container">
+    	<h4 style="display:inline-block;padding-top:16px;"><span class="label label-default">你的当前位置：<a href="#">阳光服务大厅&nbsp;-->&nbsp;</a><a href="zczx.html">政策咨询</a></span></h4>
+        <!--在线政策咨询-->
+        <button id="online_zcask" type="button" href="zxzczx.html" data-toggle="tooltip" data-placement="top" title="<h5>咨询列表中没有的政策，更加详细具体的咨询，单击跳转到在线政策咨询页面</h5>" class="btn btn-primary btn-lg pull-right">在线政策咨询</button>
+    </div>
+    
+    <!--返回顶部-->
+    <div id="go_top" class="go_top dn">
+    	<img src="img//backtop.png" data-toggle="tooltip" data-placement="top" title="<h6>返回顶部</h6>" class="go" alt="GO TOP"/>
+    </div>
+    
+    <!--内容-->
+    <div class="container">
+        <div class="row">
+            <!--左侧类型-->
+            <div class="col-xs-2 list-group menu_list">
+                <span class="a2pointer label label-success">服务对象：</span>
+                <a class="a2pointer list-group-item active" id="btnTec">教师</a>
+                <a class="a2pointer list-group-item" id="btnStu">学生/家长</a>
+                <a class="a2pointer list-group-item" id="btnEduDep">教育机构</a>
+                <a class="a2pointer list-group-item" id="btnSociety">社会公众</a>
+            </div>
+            <!--文件列表-->
+            <div class="file_list col-xs-10">
+            	<!--教师-->
+                <table class="many_file table table-hover table-responsive btnTec">
+                    <tr><td><a href="#">岳阳市教育局关于进一步加强中小学教师职业道德建设的意见</a></td></tr>
+                    <tr><td><a href="#">关于做好湖南省教育科学“十二五”规划2015年度课题组织申报工作的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市第九批特级教师评选材料报送种类及要求</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于做好岳阳市第九批特级教师申报评选工作的通知	</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于对2014年度市直教育系统教师、教育工作者绩效考核的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局转发教育部关于严禁教师违规收受学生及家长礼品礼金等行为的规定的通知</a></td></tr>
+                    <tr><td><a href="#">教师资格条例</a></td></tr>
+                    <tr><td><a href="#">中华人民共和国教师法</a></td></tr>
+                    <tr><td><a href="#">关于印发《岳阳市落实湖南省边远贫困地区、民族地区和革命老区人才支持计划教师专项计划实施方案》的通知</a></td></tr>
+                    <tr><td><a href="#">教师有哪些行为可给予行政处分或解聘</a></td></tr>
+                </table>
+                <!--学生或家长-->
+                <table class="many_file table table-hover table-responsive btnStu">
+                    <tr><td><a href="#">2014年市区普通高中指标生相关政策解读</a></td></tr>
+                    <tr><td><a href="#">湖南省中小学校学生人身伤害事故</a></td></tr>
+                    <tr><td><a href="#">学生伤害事故处理办法</a></td></tr>
+                    <tr><td><a href="#">中华人民共和国预防未成年人犯罪法</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于印发《2014年岳阳市市区初中毕业学业考试体育测试工作方案》的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于认真做好2014年高中阶段学校招生工作的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局全国英语等级考试(PETS)制度</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局全国硕士研究生招生考试制度</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局普通高校招生全国统一考试制度</a></td></tr>
+                    <tr><td><a href="#">教师有哪些行为可给予行政处分或解聘</a></td></tr>
+                </table>
+                <!--教育机构-->
+                <table class="many_file table table-hover table-responsive btnEduDep">
+                    <tr><td><a href="#">岳阳市教育局关于印发2015年度全市教育工作督导评估办法的通知	</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于开展2015年市级语言文字规范化示范校申报认定工作的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于进一步规范学校后勤服务管理工作的意见</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于晏春等同志任职的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于做好市直教育单位（学校、幼儿园）年终考核的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于做好2015年度义务教育合格学校建设项目校、农村公办幼儿园建设项目园申报工作的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于建立领导干部带队检查学校安全工作制度的通知</a></td></tr>
+                    <tr><td><a href="#">关于印发《岳阳市2015年春季中小学教科书、教学参考书目录》的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局关于加强中小学实验室建设和实验教学工作的通知</a></td></tr>
+                    <tr><td><a href="#">教师有哪些行为可给予行政处分或解聘</a></td></tr>
+                </table>
+                <!--社会公众-->
+                <table class="many_file table table-hover table-responsive btnSociety">
+                    <tr><td><a href="#">关于做好教育收费工作的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市教育局办公室关于印发《岳阳市教育局2015年为民办实事工作实施方案》的通知</a></td></tr>
+                    <tr><td><a href="#">岳阳市物价局、岳阳市财政局、岳阳市教育局关于2015年春季中小学教育收费有关事项的通知</a></td></tr>
+                    <tr><td><a href="#">2015年岳阳市市区初中毕业学业考试体育测试工作方案</a></td></tr>
+                    <tr><td><a href="#">关于严禁寒假串联补课的通知</a></td></tr>
+                    <tr><td><a href="#">关于湖南省进行国家中小学教师资格考试改革有关事项的公告</a></td></tr>
+                    <tr><td><a href="#">国务院关于深化考试招生制度改革的实施意见</a></td></tr>
+                    <tr><td><a href="#">2014年市直普通高中招生有关问题解答</a></td></tr>
+                    <tr><td><a href="#">禁止使用童工规定</a></td></tr>
+                    <tr><td><a href="#">教师有哪些行为可给予行政处分或解聘</a></td></tr>
+                </table>
+            </div>
+        </div>
+        <!--分页-->
+        <div class=" paging">
+            <ul class="pagination">
+              <li><a class="a2pointer">首页</a></li>
+              <li><a class="a2pointer">上一页</a></li>
+              <li><a class="a2pointer">下一页</a></li>
+              <li><a class="a2pointer">尾页</a></li>
+              <li><a class="a2pointer">1/3页</a></li>
+              <li><a class="a2pointer">10篇/页</a></li>
+              <li><a class="a2pointer">共21篇</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--友情链接-->
+    <div class="container friendly_link">
+        <div class="panel panel-primary">
+           <div class="panel-heading">
+              <h3 class="panel-title">友情链接</h3>
+           </div>
+           <table class="table">
+              <tr>
+                <td><a href="http://www.moe.edu.cn/" target="_blank" style="color:#0094ff;">教育部网站</a></td>
+                <td><a href="http://www.hnedu.cn/index.html" target="_blank" style="color:#0094ff;">湖南教育网</a></td>
+                <td><a href="http://hengyang.30edu.com" target="_blank" style="color:#0094ff;">衡阳市教育局</a></td>
+                <td><a href="http://www.hhyedu.com.cn" target="_blank" style="color:#0094ff;">衡阳教育信息网</a></td>
+                <td><a href="http://bys.hhyedu.com.cn" target="_blank" style="color:#0094ff;">衡阳毕业生就业网</a></td>
+              </tr>
+                <td><a href="http://www.hdjyw.cn" target="_blank" style="color:#0094ff;">衡东教育信息网</a></td>
+                <td><a href="http://www.hnxedu.com" target="_blank" style="color:#0094ff;">衡南县教育网</a></td>
+                <td><a href="http://www.hnhsedu.cn" target="_blank" style="color:#0094ff;">衡山县教育局</a></td>
+                <td><a href="http://www.zhengyangedu.net" target="_blank" style="color:#0094ff;">衡阳县教育局</a></td>
+                <td><a href="http://www.lyedu.net/" target="_blank" style="color:#0094ff;">耒阳教育网</a></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.hncnedu.com" target="_blank" style="color:#0094ff;">常宁教育信息网</a></td>
+                <td><a href="http://www.qdxedu.com" target="_blank" style="color:#0094ff;">祁东县教育网</a></td>
+                <td><a href="http://www.sgjy.net" target="_blank" style="color:#0094ff;">石鼓区教育信息网</a></td>
+                <td><a href="http://www.yfqjyw.com" target="_blank" style="color:#0094ff;">雁峰区教育信息网</a></td>
+                <td><a href="http://jwtj.zhengxiang.gov.cn" target="_blank" style="color:#0094ff;">蒸湘区教育信息网</a></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.hyzhedu.com" target="_blank" style="color:#0094ff;">珠晖区教育信息网</a></td>
+                <td><a href="http://work.sysedu.net" target="_blank" style="color:#0094ff;">邵阳市教育局阳光服务平台</a></td>
+                <td><a href="http://ygfw.hnzzsoft.com/yys/index.asp" target="_blank" style="color:#0094ff;">岳阳市教育阳光服务大厅</a></td>
+                <td><a href="http://fuwu.cdedu.cn/index.html" target="_blank" style="color:#0094ff;">常德市教育阳光服务大厅</a></td>
+                <td><a href="http://www.hncnedu.com:8018" target="_blank" style="color:#0094ff;">常宁市教育阳光服务大厅</a></td>
+              </tr>
+           </table>
+        </div>
+    </div>
+    
+     <!--页脚-->
+    <div>
+        <footer>
+            <div id="ft">
+                <div>
+                    <span>意见反馈（E-mail）：<a href="mailto:139782928@163.com">139782928@163.com</a></span><br/>
+                    <span>湘教QS2-200504-000031&nbsp;&nbsp;湘ICP备05012568-1号</span>
+                </div>
+                <p>Copyright&nbsp;&copy;&nbsp;2015&nbsp;&nbsp;湖南省衡阳市教育信息中心&nbsp;&nbsp;版权所有仿冒必究</p>
+            </div>
+        </footer>
+    </div>
+ 
+</body>
+</html>

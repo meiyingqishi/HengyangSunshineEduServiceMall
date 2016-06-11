@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>舆情反映</title>
+	<!--网站对移动设备友好，确保适当的绘制和触屏缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript" src="js//jquery-2.1.1.min.js"></script>
+    <!--bootstrap脚本引入-->
+    <script type="text/javascript" src="bootstrap-3.3.1//js//bootstrap.min.js"></script>
+    <!--bootstrap样式引入-->
+    <link href="bootstrap-3.3.1//css//bootstrap.min.css" rel="stylesheet" />
+    <!--引入舆情反映样式-->
+	<link href="css//common.css" rel="stylesheet" />
+	<!--引入舆情反映脚本-->
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <!--导航栏,固定在顶部部分-->
+    <div class="nav-bar navbar-fixed-top">
+        <div class="container">
+            <nav>
+                <a>首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="bszn.html" target="_blank">办事指南</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="zczx.html" target="_blank">政策咨询</a>&nbsp&nbsp;|&nbsp;&nbsp;
+                <a href="xxgk.html" target="_blank">信息公开</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="tssl.html" target="_blank">投诉处理</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="yqfy.html" target="_blank">舆情反映</a>
+                <a class="pull-right"><img src="img//servicephone.png"/>&nbsp;服务电话：0731-12345678</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!--背景-->
+    <div class="bigimg" style="background-image:url('img//bag.jpg');">
+       <img class="logo1" src="img//logo.png"/>
+       <div id="_2dcode"><img src="img//erweima.png" alt="二维码" data-toggle="tooltip" data-placement="left" title="<h5>扫一扫，在手机上查看吧！</h5>"/></div>
+       <img class="logo2" src="img//yuqingfanying.png"/>
+    </div>
+    
+    <!--你的当前位置-->
+    <div id="cur_location" class="container">
+    	 <h4><span class="label label-default">你的当前位置：
+         	<a href="#">阳光服务大厅&nbsp;-->&nbsp;</a>
+            <a href="yqfy.html">舆情反映</a>
+         </span></h4>
+    </div>
+    
+    <!--返回顶部-->
+    <div id="go_top" class="go_top dn">
+    	<img src="img//backtop.png" data-toggle="tooltip" data-placement="top" title="<h6>返回顶部</h6>" class="go" alt="GO TOP"/>
+    </div>
+    
+    <!--输入咨询政策内容-->
+    <div class="container" id="zxzczx_content">
+        <div class="row form-group">
+          <form mathod="post" action="" role="form">
+          	 <table class="table table-hover table-bordered table-responsive">
+           		<tr>
+                	<td><label>主题：</label></td>
+                    <td><input type="text" data-toggle="tooltip" title="<h4>反映的舆论情况的大概意思</h4>" required="required" class="form-control" name="subject"/></td>
+                </tr>
+                <tr>
+                	<td><label>类别：</label></td>
+                    <td><select name="_type" data-toggle="tooltip" title="<h4>事件所属类别</h4>" class="form-control"><option>请选事件所属类别</option></select></td>
+                </tr>
+                <tr>
+                	<td><label>问题描述：</label></td>
+                    <td><select name="problem_des" data-toggle="tooltip" title="<h4>选择问题描述类型</h4>" class="form-control"><option>请选择问题描述类型</option></select></td>
+                </tr>
+                <tr>
+                	<td><label>舆情反映角色：</label></td>
+                    <td>
+                    	<input type="radio" value="个人舆情反映" name="reply_role" id="personal" checked="checked" class="radio-inline"/><label for="personal" style="font-weight:normal;">个人舆情反映</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" value="单位舆情反映" name="reply_role" id="unit" class="radio-inline"/><label for="unit" style="font-weight:normal;">单位舆情反映</label>
+                    </td>
+                </tr>
+                <tr>
+                	<td><label>反映人：</label></td>
+                    <td><input type="text" name="report_man" class="form-control"/></td>
+                </tr>
+                <tr>
+                	<td><label>电话/手机：</label></td>
+                    <td><input type="text" name="tel" class="form-control" required="required"/><span style="color:red;">（*本市座机电话无需区号）</span></td>
+                </tr>
+                <tr>
+                	<td><label>反映内容：</label></td>
+                    <td><textarea name="event_content" data-toggle="tooltip" title="<h4>具体的舆论情况内容</h4>" required="required" id="ask_content" class="form-control input-lg"></textarea></td>
+                </tr>
+                <tr><td colspan="2"><input type="submit" value="确认提交" class="form-control btn-primary"/></td></tr>
+           	 </table>
+          </form>
+        </div>
+    </div>
+    
+    <!--友情链接-->
+    <div class="container friendly_link">
+        <div class="panel panel-primary">
+           <div class="panel-heading">
+              <h3 class="panel-title">友情链接</h3>
+           </div>
+           <table class="table">
+              <tr>
+                <td><a href="http://www.moe.edu.cn/" target="_blank" style="color:#0094ff;">教育部网站</a></td>
+                <td><a href="http://www.hnedu.cn/index.html" target="_blank" style="color:#0094ff;">湖南教育网</a></td>
+                <td><a href="http://hengyang.30edu.com" target="_blank" style="color:#0094ff;">衡阳市教育局</a></td>
+                <td><a href="http://www.hhyedu.com.cn" target="_blank" style="color:#0094ff;">衡阳教育信息网</a></td>
+                <td><a href="http://bys.hhyedu.com.cn" target="_blank" style="color:#0094ff;">衡阳毕业生就业网</a></td>
+              </tr>
+                <td><a href="http://www.hdjyw.cn" target="_blank" style="color:#0094ff;">衡东教育信息网</a></td>
+                <td><a href="http://www.hnxedu.com" target="_blank" style="color:#0094ff;">衡南县教育网</a></td>
+                <td><a href="http://www.hnhsedu.cn" target="_blank" style="color:#0094ff;">衡山县教育局</a></td>
+                <td><a href="http://www.zhengyangedu.net" target="_blank" style="color:#0094ff;">衡阳县教育局</a></td>
+                <td><a href="http://www.lyedu.net/" target="_blank" style="color:#0094ff;">耒阳教育网</a></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.hncnedu.com" target="_blank" style="color:#0094ff;">常宁教育信息网</a></td>
+                <td><a href="http://www.qdxedu.com" target="_blank" style="color:#0094ff;">祁东县教育网</a></td>
+                <td><a href="http://www.sgjy.net" target="_blank" style="color:#0094ff;">石鼓区教育信息网</a></td>
+                <td><a href="http://www.yfqjyw.com" target="_blank" style="color:#0094ff;">雁峰区教育信息网</a></td>
+                <td><a href="http://jwtj.zhengxiang.gov.cn" target="_blank" style="color:#0094ff;">蒸湘区教育信息网</a></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.hyzhedu.com" target="_blank" style="color:#0094ff;">珠晖区教育信息网</a></td>
+                <td><a href="http://work.sysedu.net" target="_blank" style="color:#0094ff;">邵阳市教育局阳光服务平台</a></td>
+                <td><a href="http://ygfw.hnzzsoft.com/yys/index.asp" target="_blank" style="color:#0094ff;">岳阳市教育阳光服务大厅</a></td>
+                <td><a href="http://fuwu.cdedu.cn/index.html" target="_blank" style="color:#0094ff;">常德市教育阳光服务大厅</a></td>
+                <td><a href="http://www.hncnedu.com:8018" target="_blank" style="color:#0094ff;">常宁市教育阳光服务大厅</a></td>
+              </tr>
+           </table>
+        </div>
+    </div>
+    
+     <!--页脚-->
+    <div>
+        <footer>
+            <div id="ft">
+                <div>
+                    <span>意见反馈（E-mail）：<a href="mailto:139782928@163.com">139782928@163.com</a></span><br/>
+                    <span>湘教QS2-200504-000031&nbsp;&nbsp;湘ICP备05012568-1号</span>
+                </div>
+                <p>Copyright&nbsp;&copy;&nbsp;2015&nbsp;&nbsp;湖南省衡阳市教育信息中心&nbsp;&nbsp;版权所有仿冒必究</p>
+            </div>
+        </footer>
+    </div>
+ 
+</body>
+</html>
